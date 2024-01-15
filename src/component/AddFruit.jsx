@@ -17,6 +17,7 @@ const AddFruits = ({AddMyFruit,Clear}) =>{
 
 
         return(
+            <div className="flex justify-center">
             <div className="m-5 p-3 w-96 h-56 border-yellow-500 bg-green-300">
 
                 <h1>Add Fruits to Cart</h1>
@@ -33,6 +34,7 @@ const AddFruits = ({AddMyFruit,Clear}) =>{
                 <button className="bg-blue-700 mt-3" onClick={()=>AddMyFruit(myFruit.id,myFruit.fruit,myFruit.quantity)}>SUBMIT</button>
                 <button className="bg-red-700 mt-3" onClick={()=>Clear()}>Clear</button>
 
+            </div>
             </div>
         )
 }

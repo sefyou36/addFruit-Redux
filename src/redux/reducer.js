@@ -10,7 +10,7 @@ export const fruitReducer = (state=initialeState,action) => {
                 case DELETE_FRUIT:
                     return {...state,card:[...state.card.filter(item => item.id !== action.payload)]}
                     case INCREMENT_QUANTITY:
-                        return {...state,card:state.card.map((item)=>item.id == action.payload ?{...item,quantity:item.quantity + 1}:item)}
+                        return {...state,card:state.card.map((item)=>item.id == action.payload ?{...item,quantity:parseInt(item.quantity) + 1}:item)}
                         case DECREMENT_FRUIT:
                             return {...state,card:state.card.map((item)=>item.id == action.payload ?{...item,quantity:item.quantity - 1}:item)}
                             case CLEAR_FRUIT:

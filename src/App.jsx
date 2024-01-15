@@ -30,8 +30,9 @@ function App() {
   return (
     <Provider store={store}>
     <h1>Hello from Redux !</h1>
-    <AddFruit/>
     <Cart/>
+    <AddFruit/>
+    
       
     </Provider>
   )
